@@ -31,7 +31,7 @@
     .gift h2 {
       margin-top: 0;
     }
-    .game-button {
+    .game-button, .food-button {
       margin-top: 10px;
       padding: 10px 20px;
       font-size: 1em;
@@ -40,8 +40,9 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      text-decoration: none;
     }
-    .game-button:hover {
+    .game-button:hover, .food-button:hover {
       background-color: #1976D2;
     }
   </style>
@@ -56,18 +57,13 @@
     <div class="gift">
       <h2>🍝 Abendessen deiner Wahl</h2>
       <p>Ich koche, was du willst – von Spaghetti bis Schnitzel 😋</p>
+      <a href="essen.html" class="food-button">Wähle dein Essen</a>
     </div>
     <div class="gift">
       <h2>🎮 Minispiel</h2>
       <p>Ein kleines Spiel zum Spaß – klick unten um zu spielen!</p>
-      <button class="game-button" onclick="startGame()">Minispiel starten</button>
+      <a href="spiel.html" class="game-button">Minispiel starten</a>
     </div>
   </div>
-
-  <script>
-    function startGame() {
-      alert("🎲 Du hast eine 6 gewürfelt! Glückwunsch!");
-    }
-  </script>
 </body>
 </html>
